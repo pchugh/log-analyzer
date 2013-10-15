@@ -1,0 +1,8 @@
+@(date: String, returnUrl: String)
+@import java.net.URLEncoder
+
+<html>
+	<body>
+		The log entries for '@date' has not been loaded. Click <a href="/apache-logs-viewer/load/@date?returnUrl=@URLEncoder.encode(returnUrl)">here</a> to load them (This might take a few minutes).
+	</body>
+</html>
